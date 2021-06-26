@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".greeting.GreetingActivity">
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Insert Name" />
+
+    <RadioGroup
+        android:id="@+id/option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/opt_man"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Man" />
+
+        <RadioButton
+            android:id="@+id/opt_woman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Woman" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_greeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Greeting" />
+
+    <TextView
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="32dp"
+        android:textAlignment="center"
+        android:id="@+id/tv_greeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+</LinearLayout>
