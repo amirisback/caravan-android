@@ -1,4 +1,4 @@
-package com.frogobox.viewmodel.model
+package com.frogobox.viewmodel.utils
 
 /*
  * Created by faisalamir on 26/06/21

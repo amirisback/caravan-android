@@ -1,7 +1,7 @@
 package com.frogobox.viewmodel.greeting
 
 import androidx.lifecycle.ViewModel
-import com.frogobox.viewmodel.model.Constant
+import com.frogobox.viewmodel.utils.Constant
 import com.frogobox.viewmodel.model.People
 
 /*

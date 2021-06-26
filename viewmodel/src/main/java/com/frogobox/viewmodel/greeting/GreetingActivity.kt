@@ -6,10 +6,9 @@ import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.RadioGroup
 import androidx.lifecycle.ViewModelProvider
 import com.frogobox.viewmodel.databinding.ActivityGreetingBinding
-import com.frogobox.viewmodel.model.Constant
+import com.frogobox.viewmodel.utils.Constant
 import com.frogobox.viewmodel.model.People
 
 class GreetingActivity : AppCompatActivity() {
