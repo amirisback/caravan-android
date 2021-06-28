@@ -58,8 +58,16 @@ class CalculatorFragment : Fragment() {
     }
 
     private fun numbers(): com.frogobox.viewmodel.model.Number {
-        val x = binding?.numberX?.text.toString().toInt()
-        val y = binding?.numberY?.text.toString().toInt()
+        val x = if (binding?.numberX?.text.toString() != "") {
+            binding?.numberX?.text.toString().toInt()
+        } else {
+            0
+        }
+        val y = if (binding?.numberY?.text.toString() != "") {
+            binding?.numberY?.text.toString().toInt()
+        } else {
+            0
+        }
         return com.frogobox.viewmodel.model.Number(x, y)
     }
 

@@ -17,22 +17,27 @@ import com.frogobox.viewmodel.model.Number
  */
 class CalculatorViewModel : ViewModel() {
 
-    var result: Int = 0
+    var result: String = ""
 
     fun sum(number: Number){
-        result = number.x + number.y
+        result = (number.x + number.y).toString()
     }
 
     fun minus(number: Number) {
-        result = number.x - number.y
+        result = (number.x - number.y).toString()
     }
 
     fun multiple(number: Number) {
-        result = number.x * number.y
+        result = (number.x * number.y).toString()
     }
 
     fun division(number: Number) {
-        result = number.x / number.y
+        if (number.y != 0) {
+            result = (number.x / number.y).toString()
+        } else {
+            result = "can't divide by zero"
+        }
+
     }
 
 }
