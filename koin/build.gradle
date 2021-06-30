@@ -4,6 +4,20 @@ plugins {
 }
 
 android {
+
+    buildFeatures {
+        viewBinding = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
@@ -23,13 +37,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = '1.8'
-    }
+
 }
 
 dependencies {
@@ -39,24 +47,23 @@ dependencies {
     implementation "androidx.appcompat:appcompat:$appcompat"
     implementation "com.google.android.material:material:$material"
     implementation "androidx.constraintlayout:constraintlayout:$constraintlayout"
-
     implementation "androidx.recyclerview:recyclerview:1.2.1"
-    implementation 'android.arch.lifecycle:extensions:1.1.1'
-    implementation 'com.github.bumptech.glide:glide:4.12.0'
+
     implementation 'androidx.activity:activity-ktx:1.2.3'
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 
-    implementation "io.insert-koin:koin-android:$koin_version"
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
 
-    // Koin Java Compatibility
-    implementation "io.insert-koin:koin-android-compat:$koin_version"
-
-    // Koin for Jetpack WorkManager
-    implementation "io.insert-koin:koin-androidx-workmanager:$koin_version"
-
-    // Koin for Jetpack Compose
-    implementation "io.insert-koin:koin-androidx-compose:$koin_version"
+    implementation "io.insert-koin:koin-core:$koin_version" // Koin core features
+    implementation "io.insert-koin:koin-android:$koin_version" // Koin main features for Android (Scope,ViewModel ...)
+    implementation "io.insert-koin:koin-android-compat:$koin_version" // Koin Java Compatibility
+    implementation "io.insert-koin:koin-androidx-workmanager:$koin_version" // Koin for Jetpack WorkManager
+    implementation "io.insert-koin:koin-androidx-compose:$koin_version" // Koin for Jetpack Compose
 
     testImplementation 'junit:junit:4.13.2'
+    testImplementation "io.insert-koin:koin-test:$koin_version" // Koin test features
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
 }
