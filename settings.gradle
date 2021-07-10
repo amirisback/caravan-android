@@ -2,3 +2,4 @@ rootProject.name = "Playground"
 include ':testing'
 include ':viewmodel'
 include ':koin'
+include ':dagger'
