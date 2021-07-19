@@ -2,14 +2,34 @@
 buildscript {
 
     ext {
-        kotlin_version = "1.5.20"
+        versionMajor = 1
+        versionMinor = 0
+        versionPatch = 0
+
+        projectCompileSdkVersion = 30
+        projectBuildToolsVersion = "30.0.3"
+        projectMinSdkVersion = 21
+        projectTargetSdkVersion = projectCompileSdkVersion
+
+        appDomain = "com"
+        appDevConsole = "frogobox"
+
+        projectVersionCode = (versionMajor * 100) + (versionMinor * 10) + (versionPatch * 1)
+        projectVersionName = "$versionMajor.$versionMinor.$versionPatch"
+
+        kotlin_version = "1.5.21"
         appcompat = "1.3.0"
-        core_ktx = "1.5.0"
-        material = "1.3.0"
+        core_ktx = "1.6.0"
+        material = "1.4.0"
         constraintlayout = "2.0.4"
-        koin_version= "3.1.1"
+        koin_version = "3.1.1"
+
+        test_junit = "4.13.2"
+        android_test_junit = "1.1.3"
+        android_test_espresso = "3.4.0"
+
     }
-    
+
     repositories {
         google()
         mavenCentral()
