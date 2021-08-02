@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "130859820491",
+    "project_id": "frogo-playground-android",
+    "storage_bucket": "frogo-playground-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130859820491:android:febfd398f095d12187824e",
+        "android_client_info": {
+          "package_name": "com.frogobox.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "130859820491-vjfufmikm0rt5m51n9ecapnosn16qrq3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.frogobox.firebase",
+            "certificate_hash": "d91afd591ccf0857e255d76883bb3dabe632bbec"
+          }
+        },
+        {
+          "client_id": "130859820491-12t77u90htvrasbf083eto2kjd4sq3ee.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLfrUc4YDp91scbvSKpi3-ewSgw-Hkk2A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "130859820491-12t77u90htvrasbf083eto2kjd4sq3ee.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
