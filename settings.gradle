@@ -1,4 +1,4 @@
-rootProject.name = "Playground"
+rootProject.name = "CaravanAndroid"
 include ':testing'
 include ':viewmodel'
 include ':koin'

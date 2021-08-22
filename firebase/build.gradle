@@ -10,12 +10,12 @@ android {
     def appName = "firebase"
     def projectApplicationId = "$appDomain.$appDevConsole.$appName"
 
-    compileSdk projectCompileSdkVersion
+    compileSdk projectCompileSdk
 
     defaultConfig {
         applicationId projectApplicationId
-        minSdk projectMinSdkVersion
-        targetSdk projectTargetSdkVersion
+        minSdk projectMinSdk
+        targetSdk projectTargetSdk
         versionCode projectVersionCode
         versionName projectVersionName
 
@@ -40,7 +40,7 @@ android {
     }
 
     buildFeatures {
-        viewBinding = true
+        viewBinding true
     }
 
 }

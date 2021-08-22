@@ -9,13 +9,12 @@ android {
     def appName = "viewmodel"
     def projectApplicationId = "$appDomain.$appDevConsole.$appName"
 
-    compileSdkVersion projectCompileSdkVersion
-    buildToolsVersion projectBuildToolsVersion
+    compileSdk projectCompileSdk
 
     defaultConfig {
         applicationId projectApplicationId
-        minSdkVersion projectMinSdkVersion
-        targetSdkVersion projectTargetSdkVersion
+        minSdk projectMinSdk
+        targetSdk projectTargetSdk
         versionCode projectVersionCode
         versionName projectVersionName
 
@@ -40,7 +39,7 @@ android {
     }
 
     buildFeatures {
-        viewBinding = true
+        viewBinding true
     }
 
 }
