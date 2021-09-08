@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Playground">
         <activity
-            android:name=".ColumnActivity"
-            android:exported="true" >
+            android:name=".LazyColumnActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,11 +19,13 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".ColumnActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Playground.NoActionBar">
-        </activity>
+            android:theme="@style/Theme.Playground.NoActionBar" />
     </application>
 
 </manifest>
