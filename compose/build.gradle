@@ -75,6 +75,9 @@ dependencies {
 
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
 
+    implementation 'com.github.amirisback:frogo-recycler-view:3.8.8'
+    implementation 'com.github.frogobox:frogo-consume-api:1.0.7'
+
     testImplementation "junit:junit:$test_junit"
     androidTestImplementation "androidx.test.ext:junit:$android_test_junit"
     androidTestImplementation "androidx.test.espresso:espresso-core:$android_test_espresso"
