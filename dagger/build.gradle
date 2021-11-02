@@ -52,7 +52,7 @@ dependencies {
 
     implementation "com.google.android.material:material:$material"
 
-    api 'com.google.dagger:dagger:2.37'
+    api 'com.google.dagger:dagger:2.38.1'
     kapt 'com.google.dagger:dagger-compiler:2.37'
 
     testImplementation "junit:junit:$test_junit"
