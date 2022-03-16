@@ -1,0 +1,146 @@
+name: Android CI
+
+on:
+
+  # Triggers the workflow on push or pull request events but only for default and protected branches
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Set Up JDK
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11
+
+      - name: Change wrapper permissions
+        run: chmod +x ./gradlew
+
+      - name: Run tests
+        run: ./gradlew test
+
+      # Run Build Project
+      - name: Build project
+        run: ./gradlew build
+
+      # Create APK Debug
+      - name: Build apk debug project (APK)
+        run: ./gradlew assembleDebug
+
+      # Create APK Release
+      - name: Build apk release project (APK)
+        run: ./gradlew assemble
+
+      # Create Bundle AAB Release
+      # Noted for main module build [module-name]:bundleRelease
+      - name: Build app bundle release (AAB)
+        run: ./gradlew compose:bundleRelease
+
+      # Create Bundle AAB Release
+      # Noted for main module build [module-name]:bundleRelease
+      - name: Build app bundle release (AAB)
+        run: ./gradlew coroutines:bundleRelease
+
+      # Create Bundle AAB Release
+      # Noted for main module build [module-name]:bundleRelease
+      - name: Build app bundle release (AAB)
+        run: ./gradlew dagger:bundleRelease
+
+      # Create Bundle AAB Release
+      # Noted for main module build [module-name]:bundleRelease
+      - name: Build app bundle release (AAB)
+        run: ./gradlew firebase:bundleRelease
+
+      # Create Bundle AAB Release
+      # Noted for main module build [module-name]:bundleRelease
+      - name: Build app bundle release (AAB)
+        run: ./gradlew koin:bundleRelease
+
+      # Create Bundle AAB Release
+      # Noted for main module build [module-name]:bundleRelease
+      - name: Build app bundle release (AAB)
+        run: ./gradlew testing:bundleRelease
+
+      # Create Bundle AAB Release
+      # Noted for main module build [module-name]:bundleRelease
+      - name: Build app bundle release (AAB)
+        run: ./gradlew ui:bundleRelease
+
+      # Create Bundle AAB Release
+      # Noted for main module build [module-name]:bundleRelease
+      - name: Build app bundle release (AAB)
+        run: ./gradlew viewmodel:bundleRelease
+
+      # Upload Artifact Build
+      # Noted For Output [module-name]/build/outputs/
+      - name: Upload build APK / AAB compose module
+        uses: actions/upload-artifact@v2
+        with:
+          name: App bundle(s) and APK(s) generated
+          path: compose/build/outputs/
+
+      # Upload Artifact Build
+      # Noted For Output [module-name]/build/outputs/
+      - name: Upload build APK / AAB coroutines module
+        uses: actions/upload-artifact@v2
+        with:
+          name: App bundle(s) and APK(s) generated
+          path: coroutines/build/outputs/
+
+      # Upload Artifact Build
+      # Noted For Output [module-name]/build/outputs/
+      - name: Upload build APK / AAB dagger module
+        uses: actions/upload-artifact@v2
+        with:
+          name: App bundle(s) and APK(s) generated
+          path: dagger/build/outputs/
+
+      # Upload Artifact Build
+      # Noted For Output [module-name]/build/outputs/
+      - name: Upload build APK / AAB firebase module
+        uses: actions/upload-artifact@v2
+        with:
+          name: App bundle(s) and APK(s) generated
+          path: firebase/build/outputs/
+
+      # Upload Artifact Build
+      # Noted For Output [module-name]/build/outputs/
+      - name: Upload build APK / AAB koin module
+        uses: actions/upload-artifact@v2
+        with:
+          name: App bundle(s) and APK(s) generated
+          path: koin/build/outputs/
+
+      # Upload Artifact Build
+      # Noted For Output [module-name]/build/outputs/
+      - name: Upload build APK / AAB testing module
+        uses: actions/upload-artifact@v2
+        with:
+          name: App bundle(s) and APK(s) generated
+          path: testing/build/outputs/
+
+      # Upload Artifact Build
+      # Noted For Output [module-name]/build/outputs/
+      - name: Upload build APK / AAB ui module
+        uses: actions/upload-artifact@v2
+        with:
+          name: App bundle(s) and APK(s) generated
+          path: ui/build/outputs/
+
+      # Upload Artifact Build
+      # Noted For Output [module-name]/build/outputs/
+      - name: Upload build APK / AAB viewmodel module
+        uses: actions/upload-artifact@v2
+        with:
+          name: App bundle(s) and APK(s) generated
+          path: viewmodel/build/outputs/
