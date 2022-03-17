@@ -1,5 +1,6 @@
 ## Learning About Android
 [![Android CI](https://github.com/caravancodes/caravan-android/actions/workflows/andoid-ci.yml/badge.svg)](https://github.com/caravancodes/caravan-android/actions/workflows/andoid-ci.yml)
+[![Scan with Detekt](https://github.com/caravancodes/caravan-android/actions/workflows/detekt.yml/badge.svg)](https://github.com/caravancodes/caravan-android/actions/workflows/detekt.yml)
 
 ## Version Release
 This Is Latest Release (Still Being Developed)
