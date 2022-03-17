@@ -13,6 +13,7 @@
 
 object DependencyGradle {
     const val KOTLIN_VERSION = Version.JetBrains.kotlin
+    const val COMPOSE_VERSION = Version.AndroidX.compose
 
     const val test_mockito = "3.9.0"
 

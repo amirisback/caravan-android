@@ -40,7 +40,7 @@ class CalculatorActivity : AppCompatActivity() {
         return ViewModelProvider(this).get(CalculatorViewModel::class.java)
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
         return true
     }
 

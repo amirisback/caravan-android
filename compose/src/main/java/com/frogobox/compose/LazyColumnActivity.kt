@@ -12,13 +12,13 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.platform.LocalContext
-import com.frogobox.api.core.ConsumeApiResponse
 import com.frogobox.api.news.ConsumeNewsApi
-import com.frogobox.api.news.model.Article
-import com.frogobox.api.news.response.ArticleResponse
-import com.frogobox.api.news.util.NewsConstant.CATEGORY_HEALTH
-import com.frogobox.api.news.util.NewsConstant.COUNTRY_ID
-import com.frogobox.api.news.util.NewsUrl
+import com.frogobox.coreapi.ConsumeApiResponse
+import com.frogobox.coreapi.news.NewsConstant.CATEGORY_HEALTH
+import com.frogobox.coreapi.news.NewsConstant.COUNTRY_ID
+import com.frogobox.coreapi.news.NewsUrl
+import com.frogobox.coreapi.news.model.Article
+import com.frogobox.coreapi.news.response.ArticleResponse
 
 /*
  * Created by faisalamir on 08/09/21
