@@ -1,11 +1,10 @@
 ## Learning About Android
-- v1.0.0 Development
+[![Android CI](https://github.com/caravancodes/caravan-android/actions/workflows/andoid-ci.yml/badge.svg)](https://github.com/caravancodes/caravan-android/actions/workflows/andoid-ci.yml)
 
-## About This Project
+## Version Release
+This Is Latest Release (Still Being Developed)
 
-## Reference
-
-## Tools
+    $version_release = 1.0.0
 
 ## Colaborator
 Very open to anyone, I'll write your name under this, please contribute by sending an email to me
