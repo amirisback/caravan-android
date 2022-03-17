@@ -20,8 +20,30 @@ object ProjectSetting {
     const val BASE_DOMAIN = "com"
     const val BASE_PLAY_CONSOLE = "frogobox"
 
-    const val MODULE_COMPOSE_NAME = "Frogo Piano Tiles"
-    const val MODULE_COMPOSE_PACKAGE_NAME = "pianogames"
+    const val MODULE_COMPOSE_NAME = "compose"
+    const val MODULE_COMPOSE_PACKAGE_NAME = "compose"
+
+    const val MODULE_COROUTINES_NAME = "coroutines"
+    const val MODULE_COROUTINES_PACKAGE_NAME = "coroutines"
+
+    const val MODULE_DAGGER_NAME = "dagger"
+    const val MODULE_DAGGER_PACKAGE_NAME = "dagger"
+
+    const val MODULE_FIREBASE_NAME = "firebase"
+    const val MODULE_FIREBASE_PACKAGE_NAME = "firebase"
+
+    const val MODULE_KOIN_NAME = "koin"
+    const val MODULE_KOIN_PACKAGE_NAME = "koin"
+
+    const val MODULE_TESTING_NAME = "testing"
+    const val MODULE_TESTING_PACKAGE_NAME = "testing"
+
+    const val MODULE_UI_NAME ="ui"
+    const val MODULE_UI_PACKAGE_NAME = "ui"
+
+    const val MODULE_VIEWMODEL_NAME = "viewmodel"
+    const val MODULE_VIEWMODEL_PACKAGE_NAME = "viewmodel"
+
 
     const val VERSION_MAJOR = 1
     const val VERSION_MINOR = 0
@@ -45,11 +67,14 @@ object ProjectSetting {
 
     // ---------------------------------------------------------------------------------------------
 
-    const val PROJECT_APP_ID = "$BASE_DOMAIN.$BASE_PLAY_CONSOLE.$MODULE_COMPOSE_PACKAGE_NAME"
-
-
-
-
+    const val PROJECT_COMPOSE_ID = "$BASE_DOMAIN.$BASE_PLAY_CONSOLE.$MODULE_COMPOSE_PACKAGE_NAME"
+    const val PROJECT_COROUTINES_ID = "$BASE_DOMAIN.$BASE_PLAY_CONSOLE.$MODULE_COROUTINES_PACKAGE_NAME"
+    const val PROJECT_DAGGER_ID = "$BASE_DOMAIN.$BASE_PLAY_CONSOLE.$MODULE_DAGGER_PACKAGE_NAME"
+    const val PROJECT_FIREBASE_ID = "$BASE_DOMAIN.$BASE_PLAY_CONSOLE.$MODULE_FIREBASE_PACKAGE_NAME"
+    const val PROJECT_KOIN_ID = "$BASE_DOMAIN.$BASE_PLAY_CONSOLE.$MODULE_KOIN_PACKAGE_NAME"
+    const val PROJECT_TESTING_ID = "$BASE_DOMAIN.$BASE_PLAY_CONSOLE.$MODULE_TESTING_PACKAGE_NAME"
+    const val PROJECT_UI_ID = "$BASE_DOMAIN.$BASE_PLAY_CONSOLE.$MODULE_UI_PACKAGE_NAME"
+    const val PROJECT_VIEWMODEL_ID = "$BASE_DOMAIN.$BASE_PLAY_CONSOLE.$MODULE_VIEWMODEL_PACKAGE_NAME"
 
     const val PROJECT_VERSION_CODE = (VERSION_MAJOR * 100) + (VERSION_MINOR * 10) + (VERSION_PATCH * 1)
     const val PROJECT_VERSION_NAME = "$VERSION_MAJOR.$VERSION_MINOR.$VERSION_PATCH"
